@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Header from './components/Header';
 import Home from './screens/Home';
 import MemoryGame from './screens/MemoryGame';
 import MultipleAnswers from './screens/MultipleAnswers';
@@ -14,7 +13,6 @@ export default App = () => {
 
   return (
     <View style={styles.container}>
-      {/* <Header /> */}
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name={"Home"} component={Home} initialParams={{games}} />

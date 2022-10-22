@@ -39,6 +39,7 @@ export default MultipleAnswers = () => {
                 currentPoint--;
             }
         })
+        // will rerender all at once
         setValidAnswer([...validAnswer])
         setInValidAnswer([...inValidAnswer])
 
@@ -61,31 +62,15 @@ export default MultipleAnswers = () => {
         }
     }
 
-    const checkBorderStyle = (option) => {
+    const checkStyleColor = (option, defaultColor) => {
         if (validAnswer.includes(option.id)) {
-            return borderStyle.green
+            return "#7DCE13"
         } else if (inValidAnswer.includes(option.id)) {
-            return borderStyle.red
+            return "red"
         } else if (answers.has(option)) {
-            return borderStyle.blue
+            return "#277BC0"
         } else {
-            return borderStyle.normal
-        }
-    }
-
-    const borderStyle = {
-        red: {
-            borderColor: "red",
-        },
-        green: {
-            borderColor: "green",
-        },
-        blue: {
-            borderColor: "#277BC0",
-        },
-        normal: {
-            borderColor: "#ccc",
-            borderWidth: 1,
+            return defaultColor
         }
     }
 
@@ -126,8 +111,10 @@ export default MultipleAnswers = () => {
                                             style={styles.optionContainer}
                                             onPress={() => optionClicked(option)}
                                         >
-                                            <Text style={{ ...styles.optionBody, ...checkBorderStyle(option) }}>{option.body}</Text>
-                                            <View style={{ ...styles.optionBox, ...checkBorderStyle(option) }}></View>
+                                            <Text style={{ ...styles.optionBody, borderColor: checkStyleColor(option, "#ccc") }}>{option.body}</Text>
+                                            <View style={styles.optionBox}>
+                                                <View style={{ ...styles.innerBox, backgroundColor: checkStyleColor(option, "white") }} ></View>
+                                            </View>
                                         </TouchableOpacity>
                                     )
                                 }
@@ -174,23 +161,30 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end",
         marginVertical: 15,
     },
-    optionBox: {
-        width: 30,
-        height: 30,
-        backgroundColor: "white",
-        borderWidth: 3,
-        borderRadius: 5,
-        marginLeft: 10,
-        elevation: 2
-    },
     optionBody: {
         flex: 1,
         backgroundColor: "white",
         fontSize: 22,
-        borderWidth: 3,
+        borderWidth: 2,
         borderRadius: 10,
         padding: 12,
         width: "100%",
         elevation: 2
+    },
+    optionBox: {
+        width: 30,
+        height: 30,
+        backgroundColor: "white",
+        borderColor: "#ccc",
+        borderWidth: 1,
+        borderRadius: 5,
+        marginLeft: 10,
+        elevation: 2,
+        padding: 2
+    },
+    innerBox: {
+        flex: 1,
+        borderRadius: 5,
+
     }
 });
