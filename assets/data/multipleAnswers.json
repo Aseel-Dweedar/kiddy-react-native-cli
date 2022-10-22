@@ -1,0 +1,113 @@
+{
+    "description": "اختر الاجابة الصحيحة",
+    "questions": [
+        {
+            "id": "1",
+            "question": "اي من هذه الحيوانات يمكنه الطيران؟",
+            "points": 2,
+            "options": [
+                {
+                    "id": "1",
+                    "body": "البطريق",
+                    "isValid": false
+                },
+                {
+                    "id": "2",
+                    "body": "الخفاش",
+                    "isValid": true
+                },
+                {
+                    "id": "3",
+                    "body": "الدجاجة",
+                    "isValid": false
+                },
+                {
+                    "id": "4",
+                    "body": "النسر",
+                    "isValid": true
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "question": "أي من هذه الاجابة هي من الفصول الاربعة",
+            "points": 3,
+            "options": [
+                {
+                    "id": "1",
+                    "body": "الصيف",
+                    "isValid": true
+                },
+                {
+                    "id": "2",
+                    "body": "الشتاء",
+                    "isValid": true
+                },
+                {
+                    "id": "3",
+                    "body": "الخريف",
+                    "isValid": true
+                },
+                {
+                    "id": "4",
+                    "body": "الليل",
+                    "isValid": false
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "question": "حيوانات تمشي على 4 اقدام",
+            "points": 2,
+            "options": [
+                {
+                    "id": "1",
+                    "body": "الأسد",
+                    "isValid": true
+                },
+                {
+                    "id": "2",
+                    "body": "الغزال",
+                    "isValid": true
+                },
+                {
+                    "id": "3",
+                    "body": "الأفعى",
+                    "isValid": false
+                },
+                {
+                    "id": "4",
+                    "body": "العنكبوت",
+                    "isValid": false
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "question": "من كواكب المجموعة الشمسية",
+            "points": 3,
+            "options": [
+                {
+                    "id": "1",
+                    "body": "القمر",
+                    "isValid": false
+                },
+                {
+                    "id": "2",
+                    "body": "عطارد",
+                    "isValid": true
+                },
+                {
+                    "id": "3",
+                    "body": "المريخ",
+                    "isValid": true
+                },
+                {
+                    "id": "4",
+                    "body": "الارض",
+                    "isValid": true
+                }
+            ]
+        }
+    ]
+}

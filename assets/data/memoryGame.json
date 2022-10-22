@@ -1,0 +1,21 @@
+{
+    "description": "طابق جميع الصور",
+    "images": [
+        {
+            "id": "1",
+            "src": "https://thumbs.dreamstime.com/b/illustration-cartoon-funny-elephant-playing-tree-branch-cartoon-funny-elephant-playing-tree-branch-148916126.jpg"
+        },
+        {
+            "id": "2",
+            "src": "https://static.vecteezy.com/system/resources/previews/004/218/321/original/cute-cat-white-pet-cartoon-character-free-vector.jpg"
+        },
+        {
+            "id": "3",
+            "src": "https://i.pinimg.com/564x/78/b4/9e/78b49e23522b6ad462f1ae94eaba1adb--puppy-images-white-puppies.jpg"
+        },
+        {
+            "id": "4",
+            "src": "https://img.freepik.com/premium-vector/turtle-cartoon-clipart-vector-illustration_576561-431.jpg"
+        }
+    ]
+}

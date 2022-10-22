@@ -1,0 +1,14 @@
+[
+    {
+        "id" : "1",
+        "title" : "لعبة الذاكرة",
+        "uri" :"https://cdn-icons-png.flaticon.com/512/6168/6168860.png",
+        "pageName" : "Memory Game"
+    },
+    {
+        "id" : "2",
+        "title" : "اختبار الاجابات المتعددة",
+        "uri" :"https://www.elearninglearning.com/thumbs/large/6/e/d/6edc638531779120e374c9ca3fb60f1651668b8f.jpg",
+        "pageName" : "Multiple Answers Quiz"
+    }
+]
